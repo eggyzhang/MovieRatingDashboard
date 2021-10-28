@@ -1,0 +1,60 @@
+{
+  "director": "Joss Whedon",
+  "genre": "Action",
+  "releaseDate": "May 4, 2012 (United States)",
+  "imageUrl": "https://m.media-amazon.com/images/M/MV5BNDYxNjQyMjAtNTdiOS00NGYwLWFmNTAtNThmYjU5ZGI2YTI1XkEyXkFqcGdeQXVyMTMxODk2OTU@._V1_.jpg",
+  "language": "English",
+  "plot": "Earth's mightiest heroes must come together and learn to fight as a team if they are going to stop the mischievous Loki and his alien army from enslaving humanity.",
+  "title": "The Avengers",
+  "writers": "Joss Whedon, Zak Penn"
+}
+{
+  "director": "Edgar Wright",
+  "genre": "Action",
+  "releaseDate": "June 28, 2017 (United States)",
+  "imageUrl": "https://m.media-amazon.com/images/M/MV5BMjM3MjQ1MzkxNl5BMl5BanBnXkFtZTgwODk1ODgyMjI@._V1_.jpg",
+  "language": "English",
+  "plot": "After being coerced into working for a crime boss, a young getaway driver finds himself taking part in a heist doomed to fail.",
+  "title": "Baby Driver",
+  "writers": "Edgar Wright"
+}
+{
+  "director": "George Lucas",
+  "genre": "Action",
+  "releaseDate": "May 25, 1977 (United States)",
+  "imageUrl": "https://m.media-amazon.com/images/M/MV5BNzVlY2MwMjktM2E4OS00Y2Y3LWE3ZjctYzhkZGM3YzA1ZWM2XkEyXkFqcGdeQXVyNzkwMjQ5NzM@._V1_.jpg",
+  "language": "English",
+  "plot": "Luke Skywalker joins forces with a Jedi Knight, a cocky pilot, a Wookiee and two droids to save the galaxy from the Empire's world-destroying battle station, while also attempting to rescue Princess Leia from the mysterious Darth Vader.",
+  "title": "Star Wars: Episode IV - A New Hope",
+  "writers": "George Lucas"
+}
+{
+  "director": "David Lynch",
+  "genre": "Action",
+  "releaseDate": "December 14, 1984 (United States)",
+  "imageUrl": "https://m.media-amazon.com/images/M/MV5BYTAzYzNlMDMtMGRjYS00M2UxLTk0MmEtYmE4YWZiYmEwOTIwL2ltYWdlL2ltYWdlXkEyXkFqcGdeQXVyNzc5MjA3OA@@._V1_.jpg",
+  "language": "English",
+  "plot": "A Duke's son leads desert warriors against the galactic emperor and his father's evil nemesis to free their desert world from the emperor's rule.",
+  "title": "Dune",
+  "writers": "Frank Herbert, David Lynch"
+}
+{
+  "director": "Denis Villeneuve",
+  "genre": "Action",
+  "releaseDate": "October 22, 2021 (United States)",
+  "imageUrl": "https://m.media-amazon.com/images/M/MV5BN2FjNmEyNWMtYzM0ZS00NjIyLTg5YzYtYThlMGVjNzE1OGViXkEyXkFqcGdeQXVyMTkxNjUyNQ@@._V1_.jpg",
+  "language": "English, Mandarin",
+  "plot": "Feature adaptation of Frank Herbert's science fiction novel, about the son of a noble family entrusted with the protection of the most valuable asset and most vital element in the galaxy.",
+  "title": "Dune",
+  "writers": "Jon Spaihts, Denis Villeneuve, Eric Roth",
+}
+{
+  "director": "Mel Brooks",
+  "genre": "Adventure",
+  "releaseDate": "June 24, 1987 (United States)",
+  "imageUrl": "https://m.media-amazon.com/images/M/MV5BMjVjOGQ0OTctNDhkZC00ZGNiLWI2ZGEtYjZlMWZjOTlkNDlhXkEyXkFqcGdeQXVyNjg1MjEwOTM@._V1_.jpg",
+  "language": "English, German",
+  "plot": "A star-pilot for hire and his trusty sidekick must come to the rescue of a princess and save Planet Druidia from the clutches of the evil Spaceballs.",
+  "title": "Space Balls",
+  "writers": "Mel Brooks, Thomas Meehan, Ronny Graham"
+}

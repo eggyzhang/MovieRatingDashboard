@@ -1,0 +1,15 @@
+{
+  "username": "eugenezhang",
+  "password": "passwordeugene",
+  "role": "admin"
+}
+{
+  "username": "josephplever",
+  "password": "passwordjoseph",
+  "role": "user"
+}
+{
+  "username": "xinyiliu",
+  "password": "passwordxinyi",
+  "role": "user"
+}
