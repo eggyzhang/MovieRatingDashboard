@@ -46,7 +46,7 @@
   "language": "English, Mandarin",
   "plot": "Feature adaptation of Frank Herbert's science fiction novel, about the son of a noble family entrusted with the protection of the most valuable asset and most vital element in the galaxy.",
   "title": "Dune",
-  "writers": "Jon Spaihts, Denis Villeneuve, Eric Roth",
+  "writers": "Jon Spaihts, Denis Villeneuve, Eric Roth"
 }
 {
   "director": "Mel Brooks",
@@ -58,3 +58,27 @@
   "title": "Space Balls",
   "writers": "Mel Brooks, Thomas Meehan, Ronny Graham"
 }
+{
+  "director": "Andrew Stanton, Lee Unkrich",
+  "genre": "Adventure",
+  "releaseDate": "May 30, 2003 (United States)",
+  "imageUrl": "https://m.media-amazon.com/images/M/MV5BZTAzNWZlNmUtZDEzYi00ZjA5LWIwYjEtZGM1NWE1MjE4YWRhXkEyXkFqcGdeQXVyNjU0OTQ0OTY@._V1_.jpg",
+  "language": "English",
+  "plot": "After his son is captured in the Great Barrier Reef and taken to Sydney, a timid clownfish sets out on a journey to bring him home.",
+  "title": "Finding Nemo",
+  "writers": "Andrew Stanton, Bob Peterson, David Reynolds"
+}
+{
+  "director": "Hayato Miyazaki",
+  "genre": "Animation",
+  "releaseDate": "March 28, 2003 (United States)",
+  "imageUrl": "https://m.media-amazon.com/images/M/MV5BMjlmZmI5MDctNDE2YS00YWE0LWE5ZWItZDBhYWQ0NTcxNWRhXkEyXkFqcGdeQXVyMTMxODk2OTU@._V1_.jpg",
+  "language": "Japanese, English",
+  "plot": "During her family's move to the suburbs, a sullen 10-year-old girl wanders into a world ruled by gods, witches, and spirits, and where humans are changed into beasts.",
+  "title": "Spirited Away",
+  "writers": "Hayato Miyazaki"
+}
+
+
+
+
