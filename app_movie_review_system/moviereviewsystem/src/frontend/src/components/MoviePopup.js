@@ -3,7 +3,6 @@ import { Component } from 'react';
 import ReactStars from 'react-stars'
 import Modal from 'react-bootstrap/Modal'
 import s from './MoviePopup.styles'
-import Button from 'react-bootstrap/Button'
 import _ from 'lodash';
 import axios from 'axios';
 import Comment from './Comment.js'
@@ -13,8 +12,6 @@ class MoviePopup extends Component {
         commentText: "",
         rating: 0.0,
         comments: [],
-        collectiveRating: 0.0
-
     };
 
     async componentDidMount(){
@@ -26,18 +23,17 @@ class MoviePopup extends Component {
         
         const responseMovies = await axios.get(`http://localhost:8080/rating/find/user/${userId}/movie/${movie.id}`, {mode:'cors'})
         const responseComments = await axios.get(`http://localhost:8080/comment/all/${movie.id}`, {mode:'cors'})
-        const responseRating = await axios.get(`http://localhost:8080/rating/find/movie/${movie.id}`, {mode:'cors'})
+        // const responseRating = await axios.get(`http://localhost:8080/rating/find/movie/${movie.id}`, {mode:'cors'})
         console.log(responseMovies);
         console.log(responseComments);
-        console.log(responseRating);
+        // console.log(responseRating);
         this.setState({rating: _.get(responseMovies, "data").rating, 
-                        comments: _.get(responseComments, "data"),
-                        collectiveRating: _.get(responseRating, "data")});
+                        comments: _.get(responseComments, "data")});
         
     }            
 
     handleRatingChange = async (newRating) => {
-        const {movie, userId} = this.props;
+        const {movie, userId, onAvgRatingUpdate} = this.props;
         this.setState({rating: newRating});
         
         const headers = {
@@ -54,11 +50,33 @@ class MoviePopup extends Component {
         console.log(body)
         
         await axios.put('http://localhost:8080/rating/update', body, {mode:'cors'})
+        const response = await axios.get(`http://localhost:8080/rating/find/movie/${movie.id}`, {mode:'cors'})        
+        onAvgRatingUpdate({movieId: movie.id, avgRating: response.data})
+    };
+
+    handleRatingDelete = async () => {
+        const {movie, userId, onAvgRatingUpdate} = this.props;
+        this.setState({rating: 0});
+
+        const headers = {
+            'Access-Control-Allow-Origin': '*'
+        }
+
+        const body = {
+            rating: 0,
+            movieId: movie.id,
+            userId: userId
+
+        }
+
+        console.log(body)
+
+        await axios.delete(`http://localhost:8080/rating/delete/user/${userId}/movie/${movie.id}`, body, {mode:'cors'})
         const response = await axios.get(`http://localhost:8080/rating/find/movie/${movie.id}`, {mode:'cors'})
         
-        this.setState({collectiveRating: response.data})
+        onAvgRatingUpdate({movieId: movie.id, avgRating: response.data})
 
-    };
+    }
 
     handleCommentTextChange = (e) => {
         this.setState({commentText: e.target.value});
@@ -123,8 +141,9 @@ class MoviePopup extends Component {
                                 alignItems: 'center'}}>
                         <b>Your Rating:</b>
                         <div style={{width:'8rem', margin: '1rem'}}><ReactStars count={5} edit={true} size={28} value={rating} onChange={this.handleRatingChange}/></div>
+                        <input type="submit" value="Clear Rating" style={{marginRight: '4rem'}} onClick={this.handleRatingDelete}/>
                         <b>Collective Rating:</b>
-                        <div style={{width:'8rem', margin: '1rem'}}><ReactStars count={5} edit={false} value={collectiveRating} size={28}/></div>
+                        <div style={{width:'8rem', margin: '1rem'}}><ReactStars count={5} edit={false} value={movie.avgRating} size={28}/></div>
                         
                     </div>
                     <div style={{borderBottom: '1px solid black', paddingBottom: '1rem', paddingTop: '1rem'}}>                        
